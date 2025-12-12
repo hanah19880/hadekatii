@@ -283,7 +283,7 @@ header {
 
 .footer-info {
     text-align: right;
-    width: 300px;
+    width: 400px;
     border-radius: 5px;
     padding: 15px;
     text-decoration: none;
@@ -299,7 +299,7 @@ header {
 }
 
 .footer-contact {  
-    width: 300px;
+    width: 400px;
     border-radius: 5px;
     padding: 15px;
     text-decoration: none;
@@ -826,12 +826,11 @@ header {
     
     .cat-box h3 {
         font-size: 18px;
-        margin-top: 10px;
         text-align: center;
     }
 
     .img-container {
-        height: 200px;
+        height: 150px;
     }
     
     .footer {
@@ -967,10 +966,6 @@ header {
              width: 100%;
         max-width: 250px;
     }
-    
-    .img-container {
-        height: 240px;
-    }
         .img-container img {
         height: 200px;
     }
@@ -984,11 +979,9 @@ header {
     .cat-box {
         max-width: 160px;
     }
-   
     .cart-row {
         flex-direction: column;
         gap: 12px;
     }
 
 }
-
