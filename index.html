@@ -403,7 +403,19 @@
 
     <footer class="footer" id="footer">
     <div class="footer-container">
+ <div class="footer-contact">
+    <h3>اتصل بنا</h3>
 
+    <form id="contactForm" class="contact-form">
+        <input type="text" id="name" name="name" placeholder="الاسم" required>
+        <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+        <textarea id="message" name="message" placeholder="أكتب ملاحظتك هنا..." required></textarea>
+
+        <button type="submit" id="submitBtn" class="btn">إرسال</button>
+    </form>
+
+    <ul id="messagesList"></ul>
+</div>
         <div class="footer-info">
            <h3>موقعنا</h3>
     <p>
@@ -418,22 +430,6 @@
     </p>  
          
         </div>
-
-   <div class="footer-contact">
-    <h3>اتصل بنا</h3>
-
-    <form id="contactForm" class="contact-form">
-        <input type="text" id="name" name="name" placeholder="الاسم" required>
-        <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
-        <textarea id="message" name="message" placeholder="أكتب ملاحظتك هنا..." required></textarea>
-
-        <button type="submit" id="submitBtn" class="btn">إرسال</button>
-    </form>
-
-    <ul id="messagesList"></ul>
-</div>
-
-
     </div>
 </footer>
 
