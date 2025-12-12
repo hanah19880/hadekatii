@@ -230,7 +230,7 @@ header {
     font-size: 20px;
     background: #ffffff;
     width: 100%;
-    padding: 12px 5px;
+    padding:  5px;
     text-align: center;
     mix-blend-mode: screen;     /*من اليوتيوب*/
     font-weight: bold;
@@ -283,6 +283,7 @@ header {
 
 .footer-info {
     text-align: right;
+    width: 500px;
     border-radius: 5px;
     padding: 15px;
     text-decoration: none;
@@ -297,8 +298,8 @@ header {
     transition: 0.3s;
 }
 
-
 .footer-contact {  
+    width: 500px;
     border-radius: 5px;
     padding: 15px;
     text-decoration: none;
@@ -332,34 +333,33 @@ header {
 .contact-form input {
     width: 100%;
     padding: 10px;
-    border-radius: 10px;
     font-size: 16px;
-    background-color: inherit;
+        border-radius: 10px;
+
 }
 .contact-form  textarea {
     width: 100%;
     height: 20vh;
     padding: 10px;
-    border-radius: 10px;
     font-size: 16px;
-    background-color: inherit;
+    border-radius: 10px;
 }
 .footer .btn {
     justify-self: start;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .contact-form  input:hover{
-    border-radius: 10px;
+    border-radius: 15px;
     background-color:#d3f6d5;
     box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.42);
     transition: 0.3s;
 }
 .contact-form  textarea:hover{
-    border-radius: 10px;
+    border-radius: 15px;
     background-color:#d3f6d5;
     box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.42);
     transition: 0.3s;
@@ -532,7 +532,7 @@ header {
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
             justify-content: center;
             gap: 25px;
         }
@@ -576,13 +576,14 @@ header {
 }
 
 .img-container:hover img {
-    width: 50%;         
-    height: 50%;
-    border-radius: 50%;  
-    bottom: 0;           
-    left: 0;               
-    top: auto;           
-    right: auto;          
+    width: 70%;         
+    height: 70%;
+    border-radius: 30%; 
+    justify-items: center; 
+    margin-right:20px ;
+    margin-top: 30px;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 16px rgba(62, 61, 61, 0.605);     
        }
 
         .desc-text {   
@@ -598,7 +599,6 @@ header {
 
         .product-card h3 {
             font-size: 22px;
-            margin: 12px;
             color: #333;
             font-weight: bold;
         }
@@ -611,12 +611,10 @@ header {
             background-size: cover;
             background-position: right;
         }
-
         .cart-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
-          
         }
 .old-price {
     font-size: 18px;
@@ -748,6 +746,12 @@ header {
 .home h3 {
     font-size: 35px;
 }
+.btn{
+    font-size: 15px;
+}
+.btn:hover{
+    font-size: 20px;
+}
     .heading {
         font-size: 32px;
         height: 80px;
@@ -781,22 +785,25 @@ header {
     .categories, .best-sellers, .product-section {
         margin: 20px;
         padding: 25px;
+
     }
     .cat-title,
     .best-title {
         font-size: 28px;
     }
     .cat-container, .best-container, .products-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 25px; 
     }
-        .cat-container,  .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        gap: 20px;
-    }
-    
-    
+     .cat-container {
+    margin-left:50px ;
+
+     }
+      .best-container{
+        margin-left:20px ;
+     }
+
+
     .cat-box, .product-card {
         width: 100%;
         max-width: 220px;
@@ -840,10 +847,7 @@ header {
     .footer-info,
     .footer-contact {
         text-align: center;
-    }
-    
-    .contact-form {
-        max-width: 100%;
+        max-width: 90%;
     }
     
     /* سكشن 5 */
@@ -912,7 +916,6 @@ header {
     
     .video h3 {
         font-size: 18px;
-        padding: 10px;
     }
     
     .contents h2,
@@ -937,7 +940,7 @@ header {
     }
     
     .cat-container,.best-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:  repeat(auto-fit, minmax(140px, 1fr));
         gap: 12px;
     }
     
@@ -966,7 +969,7 @@ header {
     }
     
     .img-container {
-        height: 220px;
+        height: 240px;
     }
         .img-container img {
         height: 200px;
@@ -977,16 +980,9 @@ header {
     }
               .desc-text {
     display: none !important;
-  }
-    .cat-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        padding: 0 10px;
-    }
-    
+  }    
     .cat-box {
         max-width: 160px;
-        padding: 8px;
     }
    
     .cart-row {
@@ -994,20 +990,4 @@ header {
         gap: 12px;
     }
 
-    .footer {
-        padding: 25px 15px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
-        padding: 8px;
-    }
-    
-    .footer .btn {
-        width: 100%;
-        text-align: center;
-    }
-
 }
-
