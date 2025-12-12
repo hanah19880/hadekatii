@@ -283,7 +283,7 @@ header {
 
 .footer-info {
     text-align: right;
-    width: 500px;
+    width: 300px;
     border-radius: 5px;
     padding: 15px;
     text-decoration: none;
@@ -299,7 +299,7 @@ header {
 }
 
 .footer-contact {  
-    width: 500px;
+    width: 300px;
     border-radius: 5px;
     padding: 15px;
     text-decoration: none;
@@ -991,3 +991,4 @@ header {
     }
 
 }
+
