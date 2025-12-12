@@ -62,20 +62,6 @@ header {
   transform: rotate(360deg) scale(1.1);
 }
 
-.divbar a {
-    margin: 0px 12px;
-    color: #000;
-    font-size: 22px;
-    text-decoration: none;
-    transition: 0.3s;
-  
-}
-
-.divbar a:hover {
-    color: #c1793e;
-    font-size: 25px;
-}
-
 .icons {
     justify-self: end;
 }
@@ -94,22 +80,20 @@ header {
 .divbar ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 45px;
     margin: 0;
     padding: 0;
 }
-
-
 .divbar ul li a {
     text-decoration: none;
     color: #393939;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.3s ease;
 }
 
 .divbar ul li a:hover {
     color: #c1793e;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 #menu-toggle {
@@ -176,6 +160,7 @@ header {
 
 .home p {
     font-size: 22px;
+    font-weight: 600;
     line-height: 1.7;
     color: inherit;
 }
@@ -297,15 +282,39 @@ header {
 
 
 .footer-info {
-  
     text-align: right;
+    width: 500px;
+    border-radius: 5px;
+    padding: 15px;
+    text-decoration: none;
+    color: #d3f6d5;
+    cursor: pointer;
+    transition: 0.3s;
+    gap: 12px;
+}
+.footer-info:hover {
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(206, 206, 206, 0.171);
+    transition: 0.3s;
 }
 
 
 .footer-contact {  
+    width: 500px;
+    border-radius: 5px;
+    padding: 15px;
+    text-decoration: none;
     text-align: center;
+    color: #256928;
+    cursor: pointer;
+    transition: 0.3s;
+    gap: 12px;
 }
-
+.footer-contact:hover {  
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(206, 206, 206, 0.171);
+    transition: 0.3s;
+}
 .footer h3 {
     font-size: 24px;
     margin-bottom: 12px;
@@ -325,29 +334,37 @@ header {
 .contact-form input {
     width: 100%;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 16px;
+    background-color: inherit;
 }
 .contact-form  textarea {
     width: 100%;
     height: 20vh;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 16px;
+    background-color: inherit;
 }
-
-
 .footer .btn {
     justify-self: start;
-    font-size: 17px;
-    border-radius: 6px;
+    font-size: 20px;
+    border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.footer .btn:hover {
-       background-color: #d8660a;
-      font-size: 20px;
+.contact-form  input:hover{
+    border-radius: 10px;
+    background-color:#d3f6d5;
+    box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.42);
+    transition: 0.3s;
+}
+.contact-form  textarea:hover{
+    border-radius: 10px;
+    background-color:#d3f6d5;
+    box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.42);
+    transition: 0.3s;
 }
 
 /* سكشن 3 */
@@ -368,8 +385,10 @@ header {
 }
 .cat-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 260px));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+    gap: 45px;
+    margin-right:60px ;
+    
 }
 .cat-box {
     background: #f0f9f0;
@@ -423,6 +442,8 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 185px));
     gap: 35px;
+    margin-right:20px ;
+
 }
 
 .best-box {
@@ -520,7 +541,7 @@ header {
         .product-card {
            display: grid;
     grid-template-rows: auto auto auto;
-    width: 300px;
+    width: 250px;
     border-radius: 15px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     padding: 15px;
@@ -531,6 +552,8 @@ header {
     cursor: pointer;
     transition: 0.3s;
     gap: 12px;
+    margin-right:50px ;
+
         }
 
         .product-card:hover {
@@ -540,7 +563,7 @@ header {
 .img-container {
     position: relative;
     width: 100%;
-    height: 190px;
+    height: 130px;
     cursor: pointer;
 }
 .img-container img {
@@ -548,7 +571,7 @@ header {
     top: 0;
     right: 0;
     width: 100%;
-    height: 190px;
+    height: 150px;
     object-fit: cover;
     border-radius: 12px;
     transition: all 0.4s ease;
@@ -557,7 +580,7 @@ header {
 .img-container:hover img {
     width: 50%;         
     height: 50%;
-    border-radius: 20%;  
+    border-radius: 50%;  
     bottom: 0;           
     left: 0;               
     top: auto;           
@@ -565,12 +588,9 @@ header {
        }
 
         .desc-text {   
-            max-height: 0;
-            opacity: 0;
             overflow: hidden;
             font-size: 15px;
             color: #444;
-            margin-top: 8px;
             text-align: justify;
         }
         .img-container:hover .desc-text {   
@@ -580,7 +600,7 @@ header {
 
         .product-card h3 {
             font-size: 22px;
-            margin: 12px 0;
+            margin: 12px;
             color: #333;
             font-weight: bold;
         }
@@ -598,7 +618,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 12px;
+          
         }
 .old-price {
     font-size: 18px;
@@ -611,7 +631,16 @@ header {
     font-weight: bold;
     color: #1f602c;
 }
+.add-btn {
+    background-color: #f0f9f0; /* غيّريها للون اللي يناسب */
+      border: none;
 
+}
+.add-btn:hover{
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.324);
+    transform: scale(1.05);
+    border-radius: 10px;
+}
         #messagesList li {
     color: #222; /* لون نص واضح */
     background-color: #e8f5e9; /* خلفية فاتحة */
