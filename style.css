@@ -168,12 +168,12 @@ header {
 .btn {
     display: inline-block;
     margin-top: 15px;
-    background-color: #39853d;
+    background-color: #c1793e;
     color: #ffffff;
-    padding: 14px 30px;
+    padding: 10px 20px;
     border-radius: 40px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: fit-content;
@@ -958,4 +958,5 @@ header {
     }
 
 }
+
 
