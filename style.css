@@ -587,6 +587,7 @@ header {
        }
 
         .desc-text {   
+            display:none;
             overflow: hidden;
             font-size: 15px;
             color: #444;
@@ -984,6 +985,7 @@ header {
     }
 
 }
+
 
 
 
