@@ -1,49 +1,49 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
     const messagesList = document.getElementById("messagesList");
+    const searchInput = document.getElementById("search");
 
-    // تحميل الرسائل من التخزين أول ما تفتح الصفحة
     let messages = JSON.parse(localStorage.getItem("messages")) || [];
 
     renderMessages();
 
-    // عند الإرسال
+    // إضافة رسالة
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        let name = document.getElementById("name").value.trim();
-        let email = document.getElementById("email").value.trim();
-        let message = document.getElementById("message").value.trim();
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-        if (!name || !email || !message) {
-            alert("رجاءً املئي جميع الحقول.");
-            return;
-        }
+        if (!name || !email || !message) return;
 
-        // إضافة الرسالة للمصفوفة
         messages.push({ name, email, message });
-
-        // حفظها في التخزين
         saveMessages();
-
-        // إعادة عرضها
         renderMessages();
-
         form.reset();
     });
 
-    // عرض الرسائل
+    // البحث التلقائي (نفس فكرة users)
+    searchInput.addEventListener("input", renderMessages);
+
+    // عرض الرسائل + البحث بالاسم والإيميل فقط
     function renderMessages() {
+        const filter = searchInput.value.toLowerCase();
         messagesList.innerHTML = "";
 
         messages.forEach((msg, index) => {
-            let li = document.createElement("li");
+            if (
+                !msg.name.toLowerCase().includes(filter) &&
+                !msg.email.toLowerCase().includes(filter)
+            ) return;
+
+            const li = document.createElement("li");
 
             li.innerHTML = `
                 <strong>الاسم:</strong> ${msg.name}<br>
                 <strong>البريد:</strong> ${msg.email}<br>
                 <strong>الرسالة:</strong> ${msg.message}
-                <button data-index="${index}" class="delete-btn">حذف</button>
+                <button class="delete-btn" data-index="${index}">حذف</button>
             `;
 
             li.style.listStyle = "none";
@@ -59,20 +59,19 @@ document.addEventListener("DOMContentLoaded", function () {
         attachDeleteEvents();
     }
 
-    // ربط أزرار الحذف
+    // حذف رسالة
     function attachDeleteEvents() {
         document.querySelectorAll(".delete-btn").forEach(btn => {
             btn.onclick = function () {
-                let i = this.getAttribute("data-index");
-
-                messages.splice(i, 1); // حذف الرسالة
+                const index = this.dataset.index;
+                messages.splice(index, 1);
                 saveMessages();
                 renderMessages();
             };
         });
     }
 
-    // حفظ الرسائل في localStorage
+    // حفظ في localStorage
     function saveMessages() {
         localStorage.setItem("messages", JSON.stringify(messages));
     }
