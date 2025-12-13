@@ -383,9 +383,9 @@ header {
 }
 .cat-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 185px));
     gap: 25px;
-    margin-right:40px ;
+    margin-right:60px ;
     
 }
 .cat-box {
@@ -795,10 +795,11 @@ header {
     }
     .cat-container, .best-container, .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        gap: 15px; 
+        gap: 20px; 
+
     }
      .cat-container {
-    margin-left:30px ;
+    margin-left:20px ;
 
      }
       .best-container{
@@ -832,7 +833,7 @@ header {
     }
 
     .img-container {
-        height: 120px;
+        height: 150px;
     }
     .old-price {
     font-size: 8px;
@@ -950,10 +951,7 @@ header {
         font-size: 24px;
         margin-bottom: 20px;
     }
-     .cat-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
+  
     .cat-box,  .best-box {
         padding: 10px;
     }
@@ -978,15 +976,15 @@ header {
         max-width: 250px;
     }
         .img-container img {
-        height: 110px;
+        height: 140px;
     }
     .product-card h3 {
         font-size: 20px;
-        margin-top: 15px;
+        margin-top: 5px;
     }
     .img-container {
     width: 100%;
-    height: 100px;
+    height: 80px;
  
 }
               .desc-text {
@@ -996,13 +994,8 @@ header {
         max-width: 160px;
     }
     .cart-row {
-        flex-direction: row;
+        flex-direction: column;
         gap: 4px;
     }
 
 }
-
-
-
-
-
