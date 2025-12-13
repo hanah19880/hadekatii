@@ -385,7 +385,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
     gap: 25px;
-    margin-right:40px ;
+    margin-right:60px ;
     
 }
 .cat-box {
@@ -984,6 +984,7 @@ header {
     }
 
 }
+
 
 
 
