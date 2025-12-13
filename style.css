@@ -878,13 +878,6 @@ header {
     .home-content p {
         display: none !important;
     }
-
-    .i {
-        margin-left: 15px;
-        margin-right: 0;
-        display: inline-block !important; 
-}
-
     .heading {
         font-size: 28px;
         height: 70px;
@@ -919,12 +912,7 @@ header {
         font-size: 24px;
         margin-bottom: 20px;
     }
-     .cat-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        margin-left:120px ;
 
-    }
     .cat-box,  .best-box {
         padding: 10px;
     }
@@ -969,15 +957,3 @@ header {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
