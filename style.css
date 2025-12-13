@@ -975,11 +975,11 @@ header {
         max-width: 250px;
     }
         .img-container img {
-        height: 90px;
+        height: 110px;
     }
     .product-card h3 {
         font-size: 20px;
-        margin-top: 25px;
+        margin-top: 15px;
     }
     .img-container {
     width: 100%;
@@ -998,6 +998,7 @@ header {
     }
 
 }
+
 
 
 
