@@ -969,6 +969,8 @@ header {
     }
     .product-card h3 {
         font-size: 20px;
+                margin-top: 5px;
+
     }
     .img-container {
     width: 100%;
@@ -987,4 +989,5 @@ header {
     }
 
 }
+
 
