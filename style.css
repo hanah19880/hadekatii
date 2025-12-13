@@ -636,6 +636,10 @@ header {
     transform: scale(1.05);
     border-radius: 10px;
 }
+.add-btn img{
+    width: 40px;
+    height: auto;
+}
         #messagesList li {
     color: #222; /* لون نص واضح */
     background-color: #e8f5e9; /* خلفية فاتحة */
@@ -791,7 +795,7 @@ header {
     }
     .cat-container, .best-container, .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        gap: 25px; 
+        gap: 15px; 
     }
      .cat-container {
     margin-left:50px ;
@@ -830,7 +834,18 @@ header {
     .img-container {
         height: 150px;
     }
-    
+    .old-price {
+    font-size: 8px;
+
+}
+
+.new-price {
+    font-size: 10px;
+}
+.add-btn img{
+    width: 20px;
+    height: auto;
+}
     .footer {
         height: auto;
         padding: 30px 4%;
@@ -935,12 +950,7 @@ header {
         font-size: 24px;
         margin-bottom: 20px;
     }
-    
-    .cat-container,.best-container {
-        grid-template-columns:  repeat(auto-fit, minmax(140px, 1fr));
-        gap: 12px;
-    }
-    
+  
     .cat-box,  .best-box {
         padding: 10px;
     }
@@ -969,8 +979,7 @@ header {
     }
     .product-card h3 {
         font-size: 20px;
-                margin-top: 5px;
-
+        margin-top: 5px;
     }
     .img-container {
     width: 100%;
@@ -989,5 +998,3 @@ header {
     }
 
 }
-
-
