@@ -580,16 +580,10 @@ header {
     height: 70%;
     border-radius: 30%; 
     justify-items: center; 
-    margin-right:20px ;
     margin-top: 30px;
     transform: translateY(-10px);
     box-shadow: 0px 0px 16px rgba(62, 61, 61, 0.605);     
        }
-        .img-container:hover .desc-text {   
-            max-height: 150px;
-            opacity: 1;
-        }
-
         .product-card h3 {
             font-size: 22px;
             color: #333;
@@ -809,6 +803,9 @@ header {
 
     .img-container {
         height: 120px;
+    }       
+    .img-container img {
+        height: 110px;
     }
     .old-price {
     font-size: 8px;
@@ -972,6 +969,7 @@ header {
     }
 
 }
+
 
 
 
