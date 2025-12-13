@@ -383,7 +383,7 @@ header {
 }
 .cat-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
     gap: 25px;
     margin-right:80px ;
     
@@ -774,7 +774,7 @@ header {
         gap: 15px; 
     }
      .cat-container {
-    margin-left:190px ;
+    margin-left:90px ;
 
      }
       .best-container{
@@ -972,6 +972,7 @@ header {
     }
 
 }
+
 
 
 
