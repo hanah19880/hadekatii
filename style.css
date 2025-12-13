@@ -384,7 +384,7 @@ header {
 .cat-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
-    gap: 45px;
+    gap: 25px;
     margin-right:60px ;
     
 }
@@ -832,7 +832,7 @@ header {
     }
 
     .img-container {
-        height: 150px;
+        height: 120px;
     }
     .old-price {
     font-size: 8px;
@@ -983,7 +983,7 @@ header {
     }
     .img-container {
     width: 100%;
-    height: 100px;
+    height: 80px;
  
 }
               .desc-text {
@@ -998,3 +998,4 @@ header {
     }
 
 }
+
