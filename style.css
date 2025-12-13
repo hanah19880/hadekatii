@@ -614,7 +614,7 @@ header {
         .cart-row {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: right;
         }
 .old-price {
     font-size: 18px;
@@ -798,7 +798,7 @@ header {
         gap: 15px; 
     }
      .cat-container {
-    margin-left:50px ;
+    margin-left:30px ;
 
      }
       .best-container{
@@ -993,7 +993,7 @@ header {
         max-width: 160px;
     }
     .cart-row {
-        flex-direction: column;
+        flex-direction: row;
         gap: 4px;
     }
 
