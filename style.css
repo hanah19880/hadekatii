@@ -383,7 +383,7 @@ header {
 }
 .cat-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
     gap: 25px;
     margin-right:40px ;
     
@@ -602,15 +602,6 @@ header {
             color: #333;
             font-weight: bold;
         }
-        .i{
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-image: url(img/icons8-website-50.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: right;
-        }
         .cart-row {
             display: flex;
             justify-content: space-between;
@@ -725,14 +716,6 @@ header {
     .home-content p {
         display: none !important;
     }
-    
-
-    .i {
-        margin-left: 15px;
-        margin-right: 0;
-        display: inline-block !important; 
-    }
-    
     /* سكشن هوم  */
     .home {
         grid-template-columns: 1fr;
@@ -1001,6 +984,7 @@ header {
     }
 
 }
+
 
 
 
