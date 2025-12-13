@@ -636,7 +636,8 @@ header {
     background-color: #d3f6d5;
     box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.42);
 }
-        #messagesList li {
+#messagesList li {
+    position: relative;
     color: #222; /* لون نص واضح */
     background-color: #e8f5e9; /* خلفية فاتحة */
     padding: 10px;
@@ -649,7 +650,7 @@ header {
 #messagesList li .delete-btn {
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 25px;
     background-color: #256928;
     color: #fff;
     border: none;
@@ -661,7 +662,7 @@ header {
 }
 
 #messagesList li .delete-btn:hover {
-    background-color: #1f602c;
+    background-color: #c1793e;
     transform: scale(1.05);
 }
 /* ================ Media Queries ================ */
@@ -982,7 +983,3 @@ header {
     }
 
 }
-
-
-
-
